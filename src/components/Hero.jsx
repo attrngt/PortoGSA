@@ -7,7 +7,7 @@ const Hero = ({ profileImage }) => {
     "A student from Media Production at Universitas Indonesia";
 
   // Data untuk deskripsi singkat kamu
-  const tags = ["Data Engineer", "Web Dev", "Creative Media"];
+  const tags = ["Creative Media", "Web Dev", "Data Engineer"];
 
   const containerVariants = {
     visible: {
@@ -36,7 +36,10 @@ const Hero = ({ profileImage }) => {
   };
 
   return (
-    <section id="home" className="flex items-center justify-center min-h-screen px-4">
+    <section
+      id="home"
+      className="flex items-center justify-center min-h-screen px-4"
+    >
       <div className="flex flex-col md:flex-row items-center w-full max-w-4xl bg-slate-50 border border-slate-200 rounded-[2rem] p-8 md:p-12 shadow-sm">
         {/* KIRI: Konten Teks */}
         <motion.div

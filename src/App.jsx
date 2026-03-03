@@ -1,6 +1,6 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import profile from "./assets/profile.jpg";
+import profile from "./assets/profile.jpeg";
 import About from "./components/About";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
