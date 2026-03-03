@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Hero = ({ profileImage }) => {
   const name = "Attar Safaningrat";
   const description =
-    "A student from Media Production at Universitas Indonesia";
+    "First year student Media Production Universitas Indonesia";
 
   // Data untuk deskripsi singkat kamu
   const tags = ["Creative Media", "Web Dev", "Data Engineer"];
