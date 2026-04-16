@@ -4,6 +4,7 @@ import DSMBC from "../assets/SertifDSMBC.jpg";
 import Hology from "../assets/SertifHology7.0.jpg";
 import Zentick from "../assets/Zentick-head.jpg";
 import promar from "../assets/promar.png";
+import kuls from "../assets/kulsweb.png";
 
 const Experience = () => {
   // Data Sertifikat (Experience)
@@ -35,6 +36,20 @@ const Experience = () => {
       category: "UI/UX Course Final Project",
       desc: "Interactive website for refreshing your mind",
       image: Zentick,
+    },
+    {
+      title: "Promates Market 2025",
+      category: "Product Design",
+      desc: "Designing Feeds for Social Media and Product",
+      image: promar,
+      link: "https://www.instagram.com/promates.market/",
+    },
+    {
+      title: "Kuls Studio Website",
+      category: "Web Developer",
+      desc: "Mid-term project for Gamification Course ",
+      image: kuls,
+      link: "https://betterremake.vercel.app/peminatan/kuls",
     },
   ];
 
