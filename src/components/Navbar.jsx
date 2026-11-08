@@ -11,11 +11,11 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed w-full top-0 left-0 z-50 bg-slate-50 border-b border-slate-200">
-      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+    <nav className="fixed w-full top-0 left-0 z-50">
+      <div className="bg-white/70 backdrop-blur-xl border border-white/70 shadow-[0_8px_30px_rgb(0,0,0,0.04),inset_0_1px_1px_rgba(255,255,255,0.9)] rounded-[24px] px-6 py-4 mx-6 mt-6 flex justify-between items-center transition-all">
         {/* Logo */}
-        <div className="text-xl font-bold text-slate-900 tracking-tight">
-          attrngrt<span className="text-indigo-600">.</span>
+        <div className="font-semibold text-sm uppercase tracking-tight text-[#1F1F1F]">
+          AttarNgt<span className="text-indigo-600">.</span>
         </div>
 
         {/* Desktop Menu */}
@@ -24,7 +24,11 @@ const Navbar = () => {
             <a
               key={link.name}
               href={link.href}
-              className="text-lg mr-9 font-semibold text-slate-600 hover:text-indigo-600 transition-colors"
+              className={
+                link.name === "Contact"
+                  ? "bg-[#1F1F1F] text-white rounded-full px-5 py-2.5 text-sm hover:bg-black transition"
+                  : "text-sm font-medium text-gray-600 hover:text-[#1F1F1F] transition-colors"
+              }
             >
               {link.name}
             </a>
@@ -33,7 +37,7 @@ const Navbar = () => {
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden text-slate-900"
+          className="md:hidden text-[#1F1F1F] p-1.5 focus:outline-hidden"
           onClick={() => setIsOpen(!isOpen)}
         >
           <svg
@@ -61,14 +65,18 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Menu (Solid White) */}
+      {/* Mobile Menu (Liquid Glass) */}
       {isOpen && (
-        <div className="md:hidden bg-white border-b border-slate-200 px-6 py-4 space-y-4">
+        <div className="md:hidden bg-white/80 backdrop-blur-xl border border-white/70 shadow-[0_8px_30px_rgb(0,0,0,0.06)] rounded-[24px] mx-6 mt-2 px-6 py-4 space-y-3">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className="block text-base font-medium text-slate-700 hover:text-indigo-600"
+              className={
+                link.name === "Contact"
+                  ? "block text-center bg-[#1F1F1F] text-white rounded-full px-5 py-2.5 text-sm hover:bg-black transition"
+                  : "block text-sm font-medium text-gray-700 hover:text-[#1F1F1F]"
+              }
               onClick={() => setIsOpen(false)}
             >
               {link.name}

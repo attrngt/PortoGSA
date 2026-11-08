@@ -7,21 +7,13 @@ import Contact from "./components/Contact";
 
 const App = () => {
   return (
-    <>
+    <div className="bg-[#F5F5F5] min-h-screen text-[#1F1F1F]">
       <Navbar />
-      <section className="bg-blue-950 min-h-screen flex justify-center items-center">
-        <Hero profileImage={profile} />
-      </section>
-      <section className="min-h-screen bg-white">
-        <About />
-      </section>
-      <section className="min-h-screen bg-white">
-        <Experience />
-      </section>
-      <section className="min-h-screen bg-white">
-        <Contact/>
-      </section>
-    </>
+      <Hero profileImage={profile} />
+      <About />
+      <Experience />
+      <Contact />
+    </div>
   );
 };
 
